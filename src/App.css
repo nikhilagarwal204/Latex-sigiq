@@ -24,5 +24,20 @@
 @media only screen and (max-width: 600px) {
   .latexdiv {
     width: auto;
+    /* Adjust if necessary */
+    padding: 10px;
+    /* Ensure padding isn't too large */
+    margin-left: auto;
+    margin-right: auto;
+    /* Other adjustments as needed */
   }
+
+  .scroll-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* Keep the content in a single line */
+  }
+
 }

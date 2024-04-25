@@ -47,10 +47,12 @@ function App() {
         <div style={{ margin: "2%" }}>
           {data.map((item, index) => (
             <div className="latexdiv" key={index}>
-              {item.latex ?
-                renderLatexChunk(item.chunk)
-                :
-                renderChunk(item.chunk)}
+              <div className="scroll-container">
+                {item.latex ?
+                  renderLatexChunk(item.chunk)
+                  :
+                  renderChunk(item.chunk)}
+              </div>
             </div>
           ))}
         </div>
