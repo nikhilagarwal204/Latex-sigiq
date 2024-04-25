@@ -1,0 +1,28 @@
+.latexdiv {
+  margin: 0.5%;
+  border: 1px solid black;
+  /* Changed from dotted to solid for a cleaner look */
+  border-radius: 10px;
+  background-color: rgb(206, 226, 233);
+  /* Use background-color for clarity */
+  padding: 1%;
+  transition: background-color 0.4s ease, margin 0.4s ease, width 0.4s ease, padding 0.4s ease;
+  /* Smooth transition for background color and margin */
+}
+
+.latexdiv:hover {
+  background-color: rgb(158, 187, 206);
+  /* Slightly lighter on hover */
+  margin-top: 1%;
+  /* Increase top margin on hover for a lifting effect */
+  margin-left: 4%;
+  width: 93%;
+  padding: 2%;
+}
+
+/* mobile device */
+@media only screen and (max-width: 600px) {
+  .latexdiv {
+    width: auto;
+  }
+}
